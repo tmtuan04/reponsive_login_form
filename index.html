@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+    - Cái dir="ltr" này có nghĩa là hướng viết của văn bản trong trang web là từ trái sang phải
+    - Không cần cũng được
+-->
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Lấy các biểu tượng trên Font Awesome -->
+    <script src="https://kit.fontawesome.com/b243a87c84.js" crossorigin="anonymous"></script>
+
+    <title>Reponsive Login Form | Tuan Tu Minh</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="title"><span>Login Form</span></div>
+            <form action="#">
+                <div class="row">
+                    <i class="fa-solid fa-user"></i>
+                    <!-- placeholder: chữ chìm trong ô -> gợi í -->
+                    <input type="text" placeholder="Email or Phone" required> <!-- Thêm thuộc tính required tức là bắt buộc phải nhập mới được login -->
+                </div>
+                <div class="row">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <!-- Chú ý đoạn này, Oke đoạn này đã ngon -->
+                <div class="pass"><a href="#">Forgot password</a></div>
+                <div class="row button">
+                    <input type="submit" value="Login">
+                </div>
+                <!-- <div class="singup-link"><a href="#">Not a member? <a href="#"></a>Signup now</a></div> -->
+                <div class="singup-link">Not a member? <a href="#">Singup now</a></div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

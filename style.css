@@ -1,0 +1,139 @@
+/* Google Fonts - Poppins */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /*
+        - Khi không sử dụng border-box, trình duyệt sẽ tính toán kích thước của một phần tử dựa trên nội dụng bên trong của phần tử đó
+        - Bao gồm width/height + padding + border
+        - Khi sử dụng border-box: Sẽ không bị ảnh hưởng bởi padding và border (padding và border) được bao gồm trong width và height luôn
+     */
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #1abc9c;
+    /* Đoạn này mình cũng chưa hiểu lắm */
+    overflow: hidden;
+    
+}
+
+.container {
+    max-width: 440px;
+    padding: 0 20px;
+    margin: 170px auto;
+}
+
+.wrapper {
+    width: 380px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.wrapper .title {
+    /* Lần đầu tiên mình thấy dòng này */
+    line-height: 90px;
+    background-color: #16a085;
+    text-align: center;
+    /* Bẻ cong 2 góc khá hay */
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.wrapper form {
+    padding: 30px 25px 25px 25px;
+}
+
+.wrapper form .row {
+    height: 45px;
+    margin-bottom: 15px;
+    /* Chú ý đoạn này */
+    position: relative;
+}
+
+.wrapper form .row input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 60px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/* Kỹ thuật đoạn này khá là nâng cao */
+/* :focus tức khi nhấn vào rồi thì sự kiện này mới xảy ra */
+
+form .row input:focus {
+    border-color: #16a085;
+    box-shadow: inset 0px 0px 2px 2px rgba(26, 188, 156, 0.25);
+}
+
+.wrapper form .row i {
+    position: absolute;
+    width: 47px;
+    height: 100%;
+    color: #fff;
+    font-size: 18px;
+    background: #16a085;
+    border: 1px solid #16a085;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper form .pass {
+    margin: -10px 0 20px 0;
+}
+
+.wrapper form .pass a {
+    color: #16a085;
+    /* Khi text-decoration dùng để trangg trí cho chữ (text), nếu thuộc tinh là none thì nó không có dấu gạch dưới như thẻ a bình thường nữa */
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* :hover - thiết lập khi ta di chuột vào */
+
+.wrapper form .pass a:hover {
+    text-decoration: underline;
+}
+
+.wrapper form .button input {
+    /* height: 100%;
+    width: 100%; */
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 0px;
+    background: #16a085;
+    border: 1px solid #16a085;
+    cursor: pointer;
+}
+
+/* Đang lỗi ở đoạn này chưa biết sai ở đâu */
+
+form .button input:hover {
+    background: #12876f;
+}
+
+.wrapper form .singup-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+.wrapper form .singup-link a {
+    color: #16a085;
+    text-decoration: none;
+}
+
+.wrapper form .singup-link a:hover {
+    text-decoration: underline;
+}
