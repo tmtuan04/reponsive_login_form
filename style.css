@@ -5,20 +5,13 @@
 * {
     margin: 0;
     padding: 0;
-    /*
-        - Khi không sử dụng border-box, trình duyệt sẽ tính toán kích thước của một phần tử dựa trên nội dụng bên trong của phần tử đó
-        - Bao gồm width/height + padding + border
-        - Khi sử dụng border-box: Sẽ không bị ảnh hưởng bởi padding và border (padding và border) được bao gồm trong width và height luôn
-     */
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
 
 body {
     background: #1abc9c;
-    /* Đoạn này mình cũng chưa hiểu lắm */
     overflow: hidden;
-    
 }
 
 .container {
@@ -33,11 +26,9 @@ body {
     border-radius: 5px;
 }
 .wrapper .title {
-    /* Lần đầu tiên mình thấy dòng này */
     line-height: 90px;
     background-color: #16a085;
     text-align: center;
-    /* Bẻ cong 2 góc khá hay */
     border-radius: 5px 5px 0 0;
     color: #fff;
     font-size: 30px;
@@ -51,7 +42,6 @@ body {
 .wrapper form .row {
     height: 45px;
     margin-bottom: 15px;
-    /* Chú ý đoạn này */
     position: relative;
 }
 
@@ -65,9 +55,6 @@ body {
     font-size: 16px;
     transition: all 0.3s ease;
 }
-
-/* Kỹ thuật đoạn này khá là nâng cao */
-/* :focus tức khi nhấn vào rồi thì sự kiện này mới xảy ra */
 
 form .row input:focus {
     border-color: #16a085;
@@ -94,20 +81,15 @@ form .row input:focus {
 
 .wrapper form .pass a {
     color: #16a085;
-    /* Khi text-decoration dùng để trangg trí cho chữ (text), nếu thuộc tinh là none thì nó không có dấu gạch dưới như thẻ a bình thường nữa */
     text-decoration: none;
     font-size: 17px;
 }
-
-/* :hover - thiết lập khi ta di chuột vào */
 
 .wrapper form .pass a:hover {
     text-decoration: underline;
 }
 
 .wrapper form .button input {
-    /* height: 100%;
-    width: 100%; */
     color: #fff;
     font-size: 20px;
     font-weight: 500;
@@ -116,8 +98,6 @@ form .row input:focus {
     border: 1px solid #16a085;
     cursor: pointer;
 }
-
-/* Đang lỗi ở đoạn này chưa biết sai ở đâu */
 
 form .button input:hover {
     background: #12876f;
